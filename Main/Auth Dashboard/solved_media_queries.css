@@ -1,11 +1,3 @@
-@media screen and (max-width: 768px) {
-    button{
-        margin-left: 125px;
-        width: 50%;
-    }
-
-    button:hover {
-        background-color: hsl(38, 92%, 58%);
-        transform: scale(1.05);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7cbad7e5bd1d20e3ca333f5b6c741d58d94a033f927e59ceb3bddae7ecb6931e
+size 219

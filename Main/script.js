@@ -1,14 +1,3 @@
-// // Get references to elements
-// const menuButton = document.querySelector('.menu-button');
-// const sidebar = document.querySelector('.sidebar');
-// const closeButton = document.querySelector('.sidebar svg');
-
-// // Function to toggle the sidebar
-// // menuButton.addEventListener('click', () => {
-// //     sidebar.style.right = '0'; // Show sidebar
-// // });
-
-// // Close the sidebar
-// closeButton.addEventListener('click', () => {
-//     sidebar.style.right = '-250px'; // Hide sidebar
-// });
+version https://git-lfs.github.com/spec/v1
+oid sha256:4601d28daab0159cbcd7acc44864cdd618f23a0c15d55bf434b6d1ee7c5e3938
+size 515

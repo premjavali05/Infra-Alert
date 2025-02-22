@@ -1,24 +1,3 @@
-<?php
-require_once('connect.php');
-session_start();
-$pno = $_SESSION['phno'];
-
-    print_r($_POST['formData']);
-
-    $form = json_decode($_POST['formData'], true);
-     // Get phone number from POST data
-
-    foreach ($form as $f) {
-        $address = mysqli_real_escape_string($connect, $f['address']);
-        $latitude = mysqli_real_escape_string($connect, $f['latitude']);
-        $longitude = mysqli_real_escape_string($connect, $f['longitude']);
-
-        $sql = "INSERT INTO save_location (pno, img_url, latitude, longitude, address) VALUES ('$pno', '', '$latitude', '$longitude', '$address')";
-        $result = mysqli_query($connect, $sql);
-
-        if (!$result) {
-            echo "Error: " . mysqli_error($connect);
-        }
-    }
-    echo "Location saved successfully";
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf8385332d1035d75487fca2427f3b536c580c3f88660d4ff56605721b119ca7
+size 808

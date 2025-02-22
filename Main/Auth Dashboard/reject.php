@@ -1,25 +1,3 @@
-<?php
-    require_once("connect.php");
-    session_start();
-    
-
-    $eid = $_GET['eid'];
-    $cid = $_GET['cid'];
-
-    if (!isset($_SESSION['redirected'])) 
-    {
-        $_SESSION['redirected'] = true;
-
-        $sql=" UPDATE complaint SET status = 'Rejected' WHERE cid = '$cid' AND status = 'Pending' ";
-        $result=mysqli_query($connect,$sql);
-
-        header("location: ../Auth Dashboard/auth_dashboard.php?eid=$eid");
-        exit;
-    } 
-    else 
-    {
-        // We've already been redirected, so display the page
-        unset($_SESSION['redirected']); // Reset the session variable
-    }
-
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3fce77fced686c8967f2946f9e1cd8256602188a18eeec4f5c23b9e43ae7862
+size 632
