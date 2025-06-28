@@ -1,0 +1,104 @@
+.main-container {
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+.welcome-title {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-title .name-color {
+  color: #ff2770;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-dept {
+  text-align: center;
+  font-weight: bold;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+  padding: 50px 100px;
+}
+
+.card-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.card-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff2770;
+  margin-bottom: 50px;
+}
+
+.complaint-link {
+  background-color: hsl(38, 92%, 58%);
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.complaint-link:hover {
+  background-color: #222;
+  color: hsl(38, 92%, 58%);
+  transform: scale(1.1);
+}
+
+.card-item:hover {
+  padding: 20px;
+  background: #222;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  box-shadow: 0 0 15px hsl(38, 92%, 58%);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
+
+  .card-item h2 {
+    margin-bottom: 30px;
+  }
+
+  .complaint-link {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-item h2 {
+    margin-bottom: 30px;
+  }
+}

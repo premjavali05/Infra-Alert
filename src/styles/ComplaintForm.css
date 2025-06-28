@@ -1,0 +1,112 @@
+.complaint-container {
+  max-width: 500px;
+  margin: 100px auto 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.complaint-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.complaint-container label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+}
+
+.complaint-container input[type="text"],
+.complaint-container input[type="date"],
+.complaint-container textarea,
+.complaint-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: #f3f3f3;
+}
+
+.complaint-container input[type="file"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.complaint-container input[type="text"]:focus,
+.complaint-container input[type="date"]:focus,
+.complaint-container textarea:focus,
+.complaint-container select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  transform: scale(1.02);
+}
+
+.complaint-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.complaint-container button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.complaint-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.location-info {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .complaint-container {
+    width: 90%;
+    margin: 100px auto 30px;
+    padding: 15px;
+  }
+}
